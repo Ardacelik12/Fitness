@@ -11,8 +11,8 @@ namespace DataAccess.Concrete.EntityFramework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=FitnessCenter;Trusted_connection=true");
-
+            optionsBuilder.UseSqlServer(@"Data Source = SQL5109.site4now.net; Initial Catalog = db_a7ea59_fitness; User Id = db_a7ea59_fitness_admin; Password = arda1234@");
+            //Server=(localdb)\MSSQLLocalDB;Database=FitnessCenter;Trusted_connection=true
 
         }
         public DbSet<BlogPost> BlogPost  { get; set; }
